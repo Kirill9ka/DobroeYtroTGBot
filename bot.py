@@ -19,7 +19,7 @@ morning_gifs = [
 ]
 
 night_gifs = [
-    "https://otkritkiok.ru/posts/big/otkrytka-spokoynoy-nochi-so-spyashchim-kотиком-84002.gif",
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG4waHd5b2s2bXp3dnA3Yjk0dTVvZ3A4cmIyY2VtcG1peXoyaXl6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XvDLulUiG6YeWltIQS/giphy.gif",
     "https://i.pinimg.com/originals/1b/71/eb/1b71ebc942ad2236e03221e835dd5b39.gif",
     "https://cdn.oonimages.ru/posts/big/kartinka-spokoynoy-nochi-s-kotikom-2920.gif"
 ]
@@ -27,7 +27,7 @@ night_gifs = [
 badwords_gifs = [
     "https://99px.ru/sstorage/86/2016/02/image_861302160010511602429.gif",
     "https://media.tenor.com/TFpTD5Cj-ukAAAAM/cat-%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.gif",
-    "https://lh4.googleusercontent.com/proxy/DB3uJ0LyQsaxlrxEcg3kW7XgqoBaKIPxr5H1f1o26vXEZ8ezmTMY6FC6-Vuq_cC3QKewfRD_ZFhAS2AwNdMx5flPR1CdM_kNjEI"
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDE3aGprOGpob3U0YjF1a2w0bjliemh5OGsxbXNqam9tb3Jhc2kzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AzEXdIb1wyCTWJntb/giphy.gif"
 ]
 
 # Ключевые слова
