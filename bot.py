@@ -47,6 +47,7 @@ def get_username(user):
         return user.first_name
     return "друг"
 
+print("Скрипт работает!")
 # ====== /start ======
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -75,7 +76,7 @@ def send_welcome(message):
             "Пишите 'доброе утро' или 'спокойной ночи', и я пришлю GIF всем!"
         )
         bot.send_animation(chat_id, welcome_gif, caption=group_text)
-
+print(f"Пользователь {user} запустил бота")
 # ====== /stats ======
 @bot.message_handler(commands=['stats'])
 def get_stats(message):
@@ -89,7 +90,7 @@ def get_stats(message):
         msg += f"• {user}: {count} добропожеланий\n"
 
     bot.send_message(chat_id, msg, parse_mode="Markdown")
-
+print(f"Пользователь {user} смотрит стату")
 # ====== Текстовые сообщения ======
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
@@ -110,18 +111,21 @@ def handle_text(message):
         stats[chat_id][user] = stats[chat_id].get(user, 0) + 1
         gif = random.choice(morning_gifs)
         bot.send_animation(chat_id, gif, caption=f"Доброе утро, @{user}! ☀️")
+        print(f"Пользователь {user} сказал доброе утро")
         return
-
+    
     if check_keywords(text, night_keywords):
         stats[chat_id][user] = stats[chat_id].get(user, 0) + 1
         gif = random.choice(night_gifs)
         bot.send_animation(chat_id, gif, caption=f"Спокойной ночи, @{user}! 🌙")
+        print(f"Пользователь {user} сказал спокойной ночи")
         return
 
     if check_keywords(text, bad_keywords):
         stats[chat_id][user] = stats[chat_id].get(user, 0) + 1
         gif = random.choice(badwords_gifs)
         bot.send_animation(chat_id, gif, caption=f"Это было грубо!, @{user}! 😖")
+        print(f"Пользователь {user} сказал мат")
         return
 
 # ====== Запуск бота ======
